@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疫情监控</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <script src="{{ url_for('static',filename='js/echarts.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jQuery_basic.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/china.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/echarts-wordcloud.min.js') }}"></script>
+</head>
+<body>
+ <div id="title">全国疫情实时追踪</div>
+    <div id="time"></div>
+    <div id="c1">
+        <div class="num">
+            <h1></h1>
+        </div>
+        <div class="num">
+            <h1></h1>
+        </div>
+        <div class="num">
+            <h1></h1>
+        </div>
+        <div class="num">
+            <h1></h1>
+        </div>
+        <div class="txt">
+            <h2>累计确诊</h2>
+        </div>
+        <div class="txt">
+            <h2>新增确诊</h2>
+        </div>
+        <div class="txt">
+            <h2>累计治愈</h2>
+        </div>
+        <div class="txt">
+            <h2>累计死亡</h2>
+        </div>
+    </div>
+    <div id='c2'></div>
+    <div id='l1'></div>
+    <div id='l2'></div>
+    <div id='r1'></div>
+    <div id='r2'></div>
+ <script src="{{ url_for('static',filename='js/ec-map.js') }}"></script>
+ <script src="{{ url_for('static',filename='js/ec-l1.js') }}"></script>
+ <script src="{{ url_for('static',filename='js/ec-l2.js') }}"></script>
+ <script src="{{ url_for('static',filename='js/ec-r1.js') }}"></script>
+ <script src="{{ url_for('static',filename='js/ec-wordcloud.js') }}"></script>
+ <script src="{{ url_for('static',filename='js/get_time_and_data.js') }}"></script>
+</body>
+</html>
